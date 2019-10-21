@@ -12,7 +12,13 @@ db.once("open", function() {
   console.log("____________________________");
 });
 let tasksSchema = new mongoose.Schema({
-  title: String
+  userName: String,
+  email: String,
+  password:String,
+  phoneNumber:Number,
+  point:Number,
+  location:String,
+  addMaterial:[{type:String, quantity:Number}]
 });
 let Tasks = mongoose.model("tasks", tasksSchema);
 
