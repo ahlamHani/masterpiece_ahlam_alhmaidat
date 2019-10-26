@@ -1,12 +1,17 @@
 import React, { Component } from "react";
-import User from "./components/User";
+import User from "./components/User/User";
 import axios from "axios";
-import Registration from "./components/Registration";
-import Add from "./components/Add";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
-
-import Login from "./components/Login";
+import Registration from "./components/Registration/Registration";
+// import Add from "./components/Add";
+import Add from "./components/Add/Add";
+import Offers from "./components/Offers/offers";
+import Login from "./components/Login/Login";
 import Admin from "./components/Admin";
+import Header from "./components/Header";
+import Navhead from "./components/Navhead";
+import Footer from "./components/Footer/footer";
+import Landingpage from "./components/Landingpage/Landingpage";
 
 class App extends Component {
   state = {
@@ -25,12 +30,33 @@ class App extends Component {
       // }
     ],
     user: "",
-    postID: null
+    postID: null,
+    offer:[]
   };
 
   componentDidMount() {
     this.getData();
+    this.getOffers();
   }
+
+  getOffers = () => {
+    // const axios = require("axios");
+
+    // Make a request for a user with a given ID
+    axios
+      .get("http://localhost:9000/getoffer")
+      .then(({ data }) => {
+        // handle success
+        console.log(data);
+        this.setState({
+          offer: data
+        });
+      })
+      .catch(error => {
+        // handle error
+        console.log(error);
+      });
+  };
 
   getData = () => {
     // const axios = require("axios");
@@ -97,34 +123,42 @@ class App extends Component {
 
   render() {
     const { state, getData, checkUser, addRegistration, add } = this;
-    const { user, userReq, users } = state;
+    const { user, userReq, users,offer } = state;
     return (
       <div>
         <Router>
           <Switch>
             <Route exact path="/">
+              <Header />
               <Login checkUser={checkUser} />
+            </Route>
+            <Route path="/home">
+              <Landingpage user={user} />
+            </Route>
+            <Route exact path="/offers">
+              {/* <Navhead /> */}
+              <Offers user={user} offer={offer}/>
             </Route>
             <Route path="/user">
               <User user={user} getpostID={this.getPostId} />
             </Route>
             <Route path="/registration">
+              <Header />
               <Registration addRegistrationA={addRegistration} />
             </Route>
-            <Route path="/add"
-            component={postID => <Add add={add} {...postID} />}
-            
+            <Route
+              path="/add"
+              component={postID => <Add user={user} add={add} {...postID} />}
             >
               {/* <Add add={add} postID={this.state.postID} /> */}
               {/* <Add add={add} /> */}
-              
             </Route>
             <Route path="/admin">
-              <Admin users={users}/>
+              <Admin users={users} />
             </Route>
-       
           </Switch>
         </Router>
+        <Footer />
       </div>
     );
   }

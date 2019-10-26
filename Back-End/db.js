@@ -20,7 +20,25 @@ let userSchema = new mongoose.Schema({
   location: String,
   addMaterial: [{ type: String, quantity: Number }]
 });
+
 let Users = mongoose.model("users", userSchema);
+
+let offerSchema = new mongoose.Schema({
+  pathImage:String,
+  Price:Number,
+  title:String
+})
+let Offers = mongoose.model("offers", offerSchema);
+
+let getOffer = cb =>{
+  Offers.find({}, function(err, docs) {
+    if (err) {
+      console.log("ERR:", err);
+    }
+    console.log("DOCS:", docs);
+    cb(docs);
+  });
+}
 
 let getRepo = cb => {
   // console.log("GET TASKS FROM DATABASE");
@@ -41,6 +59,7 @@ let registUser = (cb, obj) => {
         email: obj.email,
         password: obj.password,
         phoneNumber: obj.phoneNumber,
+        point:0,
         location: obj.location
       }
     ],
@@ -69,6 +88,7 @@ let getUser = (cb, object) => {
 };
 
 let addNew = (box, cb) => {
+  console.log('BOX In DB: ', box)
   Users.findOne({ _id: box.id }, function(err, docsFind) {
     if (err) {
       console.log("ERR:", err);
@@ -93,5 +113,6 @@ module.exports = {
   Repo: getRepo,
   getUser: getUser,
   regist: registUser,
-  addFun: addNew
+  addFun: addNew,
+  getOffer:getOffer
 };

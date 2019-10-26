@@ -14,6 +14,12 @@ app.use(function(req, res, next) {
 // to run req.body
 app.use(express.json());
 
+app.get("/getoffer", (req, res) => {
+  DB.getOffer(repo => {
+    res.json(repo);
+  });
+});
+
 app.get("/", (req, res) => {
   // let x = 2 * 2;
   res.json("server is working");

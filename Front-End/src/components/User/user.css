@@ -1,0 +1,23 @@
+.userContainer{
+    /* margin-bottom : 80%; */
+    background-image: linear-gradient(to right, green , yellow,gray)
+    
+}
+
+.button1{
+ margin-left:30px;
+
+}
+
+
+
+
+.form-group{
+    padding:90px;
+    /* margin: 200px; */
+    margin-top:  5%;
+    margin-left: 30%;
+    border-style: solid ;
+     /* text-align: center; */
+     width: 30%;
+}

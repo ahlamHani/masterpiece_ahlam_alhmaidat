@@ -36,10 +36,11 @@ export class Admin extends Component {
                   <td  scope="col" >{user.userName}</td>
                   <td  scope="col" >{user.phoneNumber}</td>
                   <td  scope="col" >{user.email}</td>
+                  {/* <input type="number" value={user.point}/> */}
                   <td  scope="col" >{user.point}</td>
                   <td  scope="col" >{user.location}</td>
-                  {/* <td  scope="col" >{user.addMaterial[0]}</td>
-                  <td  scope="col" >{user.addMaterial[0]}</td> */}
+                  {/* <td  scope="col" >{user["addMaterial"][0]}</td> */}
+                  {/* <td  scope="col" >{user.addMaterial[0]}</td> */}
                 </tr>
               );
             })}
