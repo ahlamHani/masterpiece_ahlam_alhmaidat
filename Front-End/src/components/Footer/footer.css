@@ -1,0 +1,22 @@
+.img{
+ width: 20%;
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+}
+
+
+.foot{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 
+
+}
+.footback{
+    width: 100%;
+    padding-top: 15%;
+}
+
+.card-img{
+    padding: 5px;
+}

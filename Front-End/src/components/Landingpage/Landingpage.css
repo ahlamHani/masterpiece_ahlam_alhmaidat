@@ -1,0 +1,47 @@
+.slides{
+    width: 100% !important;
+    height: 600px;
+}    
+
+
+/* 
+.slides1{
+    width: 100% !important;
+    height: 600px;
+    background-size: cover;
+    background-image: url(3.png);
+}  
+.slides2{
+    width: 100% !important;
+    height: 600px;
+    background-size: cover;
+    background-image: url(2.jpg);
+} 
+.slides3{
+    width: 100% !important;
+    height: 600px;
+    background-size: cover;
+    background-image: url(1.png);
+}  */
+
+
+
+.insidelogo{
+position: relative;
+
+}
+
+
+.insidemythemes{
+position: absolute;
+z-index: 999999999999999999999999999;
+/* background-color: chartreuse; */
+color: rgb(0, 0, 255);
+font-size: 62px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+

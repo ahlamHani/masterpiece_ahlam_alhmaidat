@@ -1,0 +1,25 @@
+.form-group {
+  width: 450px;
+  margin: 0 auto;
+}
+.margin {
+  margin-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+}
+.inputE {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+image {
+  width: 30px;
+  height: 30px;
+}
+
+#realContent {
+  border: 1px solid black;
+  padding: 30px;
+  height: auto;
+}
