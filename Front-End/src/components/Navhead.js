@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Navbar, Nav, Image } from "react-bootstrap";
 import Logo from "./images/Recycling.png";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+
+
 export default class Navhead extends Component {
   render() {
     return (

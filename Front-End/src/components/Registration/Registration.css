@@ -1,11 +1,6 @@
-body {
-  /* background:  url("1.png") ;  */
-  /* no-repeat fixed */
-  /* color: gray; */
-}
-
 .row{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-group1 {
@@ -13,16 +8,21 @@ body {
   margin: 50px auto;
   /* margin-bottom: 100px; */
   font-size: 20px;
+  
 }
 
 .inputE {
   margin-top: 20px;
   margin-bottom: 20px;
+ 
+  
 }
 #realContent {
   border: 1px solid black;
   padding: 30px;
   height: auto;
+  border-radius:35px;
+  
 }
 
 #realContent {

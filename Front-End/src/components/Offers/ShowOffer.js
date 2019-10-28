@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
- import {Modal, Button} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
 
 
 export default class ShowOffer extends Component {
@@ -34,8 +33,6 @@ export default class ShowOffer extends Component {
               <Button variant="danger" onClick={this.props.onHide}>Close</Button>
             </Modal.Footer>
           </Modal>
-
-
 
         )
     }

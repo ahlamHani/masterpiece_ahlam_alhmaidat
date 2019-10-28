@@ -49,6 +49,11 @@ app.put("/add", (req, res) => {
     res.json(index);
   });
 });
+app.get("/futher", (req, res) => {
+  DB.Repo(repo => {
+    res.json(repo);
+  });
+});
 
 const PORT = 9000;
 app.listen(PORT, () => console.log(`Server listening to ${PORT}`));
