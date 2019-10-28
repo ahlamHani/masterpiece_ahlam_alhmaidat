@@ -34,9 +34,9 @@ export default class offers extends Component {
     if (this.state.point == event.target.value) {
       this.setState({ message: <label>Are You Sure</label> });
     } else {
-      this.setState({ message: alert("You Don't Have Enough Points") });
+      this.setState({ message:  <Alert className="alert alert-danger" role="alert">You Don't Have Enough Point</Alert>});
+     
     }
-    // <Alert className="alert alert-danger" role="alert">You Don't Have Enough Point</Alert>
   };
 
   constructor(props) {
@@ -113,8 +113,8 @@ export default class offers extends Component {
       <React.Fragment>
         <Navhead username={user.userName} />
         <div className="card-container">
-          <div className="card">
-            <img src={p4} className="card-img-top" alt="Offer1" />
+          <div  style={{borderRadius:"10%"}}  className="card">
+            <img style={{borderRadius:"1%"}} src={p4}className="card-img-top img-circle" alt="Offer1" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -134,12 +134,12 @@ export default class offers extends Component {
                 show={this.state.ShowOfferAdd}
                 onHide={ShowOfferClose}
               />
-              {/* {this.state.message} */}
+              {this.state.message}
             </div>
           </div>
 
-          <div className="card">
-            <img src={p7} className="card-img-top" alt="Offer2" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img style={{borderRadius:"10%"}} src={p7} className="card-img-top" alt="Offer2" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -161,10 +161,14 @@ export default class offers extends Component {
               />
             </div>
           </div>
-          <div className="card">
-            <img src={p12} className="card-img-top" alt="Offer3" />
+          <div  style={{borderRadius:"10%"}}  className="card">
+            <img  style={{borderRadius:"10%"}}src={p12} className="card-img-top" alt="Offer3" />
             <div className="card-body">
+<<<<<<< HEAD
               <button
+=======
+            <button 
+>>>>>>> tpload naada 28-10 3:46
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
@@ -184,8 +188,8 @@ export default class offers extends Component {
               />
             </div>
           </div>
-          <div className="card">
-            <img src={p8} className="card-img-top" alt="Offer4" />
+          <div  style={{borderRadius:"10%"}}  className="card">
+            <img  style={{borderRadius:"10%"}}src={p8} className="card-img-top" alt="Offer4" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -208,8 +212,8 @@ export default class offers extends Component {
             </div>
           </div>
 
-          <div className="card">
-            <img src={p5} className="card-img-top" alt="Offer5" />
+          <div  style={{borderRadius:"10%"}}  className="card">
+            <img  style={{borderRadius:"10%"}} src={p5} className="card-img-top" alt="Offer5" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -232,8 +236,8 @@ export default class offers extends Component {
             </div>
           </div>
 
-          <div className="card">
-            <img src={p10} className="card-img-top" alt="Offer6" />
+          <div style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p10} className="card-img-top" alt="Offer6" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -255,8 +259,8 @@ export default class offers extends Component {
               />
             </div>
           </div>
-          <div className="card">
-            <img src={p1} className="card-img-top" alt="Offer7" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}}src={p1} className="card-img-top" alt="Offer7" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -279,8 +283,8 @@ export default class offers extends Component {
             </div>
           </div>
 
-          <div className="card">
-            <img src={p3} className="card-img-top" alt="Offer8" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p3} className="card-img-top" alt="Offer8" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -302,8 +306,8 @@ export default class offers extends Component {
               />
             </div>
           </div>
-          <div className="card">
-            <img src={p2} className="card-img-top" alt="Offer9" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p2} className="card-img-top" alt="Offer9" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -326,8 +330,8 @@ export default class offers extends Component {
             </div>
           </div>
 
-          <div className="card">
-            <img src={p9} className="card-img-top" alt="Offer10" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p9} className="card-img-top" alt="Offer10" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -349,8 +353,8 @@ export default class offers extends Component {
               />
             </div>
           </div>
-          <div className="card">
-            <img src={p6} className="card-img-top" alt="Offer11" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p6} className="card-img-top" alt="Offer11" />
             <div className="card-body">
               <button
                 className="btn btn-success"
@@ -373,8 +377,8 @@ export default class offers extends Component {
             </div>
           </div>
 
-          <div className="card">
-            <img src={p11} className="card-img-top" alt="Offer12" />
+          <div  style={{borderRadius:"10%"}} className="card">
+            <img  style={{borderRadius:"10%"}} src={p11} className="card-img-top" alt="Offer12" />
             <div className="card-body">
               <button
                 className="btn btn-success"

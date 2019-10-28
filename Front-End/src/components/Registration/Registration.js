@@ -121,7 +121,13 @@ export default class Registration extends Component {
                     </button>
                   </Link>
 
+<<<<<<< HEAD
                   <div></div>
+=======
+                  <div>
+                    <p>Already have an account? <Link to="/">Sign in</Link></p>
+                  </div>
+>>>>>>> tpload naada 28-10 3:46
                 </div>
               </form>
             </div>

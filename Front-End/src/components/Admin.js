@@ -5,9 +5,10 @@ export class Admin extends Component {
     return (
       <div>
         <table
-          style={{ border: " 1px solid black", width: "95%", margin: "auto" }}
+          style={{ border: " 1px solid black", width: "95%", margin: "0px auto", marginBottom:"1000px"}}
         >
           <thead>
+
             <tr
               className="table-success"
               style={{
@@ -25,6 +26,7 @@ export class Admin extends Component {
               <th scope="col">Location</th>
               <th scope="col">Type</th>
               <th scope="col">Quantity</th>
+
             </tr>
           </thead>
 
@@ -46,10 +48,12 @@ export class Admin extends Component {
                   <td scope="col">{user.phoneNumber}</td>
                   <td scope="col">{user.email}</td>
                   {/* <input type="number" value={user.point}/> */}
+
                   <td scope="col">{user.point}</td>
                   <td scope="col">{user.location}</td>
                   <td scope="col">{JSON.parse(user.addMaterial[0]).type}</td>
                   <td scope="col">{JSON.parse(user.addMaterial[0]).quantity}</td>
+
                 </tr>
               );
             })}
