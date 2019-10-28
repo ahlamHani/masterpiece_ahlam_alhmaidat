@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Registration.css";
-import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default class Registration extends Component {
   state = {
     userName: "",
@@ -53,9 +53,7 @@ export default class Registration extends Component {
               <form id="regForm">
                 <div className="form-group1">
                   <div className="inputE">
-                    <span className="input-group-addon">
-                      {/* <i className="fa fa-user-secret icon-2x"></i> */}
-                    </span>
+                    <span className="input-group-addon"></span>
                     <input
                       value={userName}
                       onChange={this.handelChange}
@@ -67,9 +65,7 @@ export default class Registration extends Component {
                     />
                   </div>
                   <div className="inputE">
-                    <span className="input-group-addon">
-                      {/* <i className="fa fa-envelope icon-2x"></i> */}
-                    </span>
+                    <span className="input-group-addon"></span>
                     <input
                       value={email}
                       onChange={this.handelChange}
@@ -82,9 +78,7 @@ export default class Registration extends Component {
                     />
                   </div>
                   <div className="inputE">
-                    <span className="input-group-addon">
-                      {/* <i className="fa fa-mobile icon-2x"></i> */}
-                    </span>
+                    <span className="input-group-addon"></span>
                     <input
                       value={phoneNumber}
                       onChange={this.handelChange}
@@ -95,9 +89,7 @@ export default class Registration extends Component {
                     />
                   </div>
                   <div className="inputE">
-                    <span className="input-group-addon">
-                      {/* <i className="fa fa-map-marker icon-2x"></i> */}
-                    </span>
+                    <span className="input-group-addon"></span>
                     <input
                       value={location}
                       onChange={this.handelChange}
@@ -108,9 +100,7 @@ export default class Registration extends Component {
                     />
                   </div>
                   <div className="inputE">
-                    <span className="input-group-addon">
-                      {/* <i className="fa fa-asterisk icon-2x"></i> */}
-                    </span>
+                    <span className="input-group-addon"></span>
                     <input
                       value={password}
                       onChange={this.handelChange}
@@ -131,9 +121,7 @@ export default class Registration extends Component {
                     </button>
                   </Link>
 
-                  <div>
-                    {/* <p>Already have an account? <Link to="/">Sign in</Link></p> */}
-                  </div>
+                  <div></div>
                 </div>
               </form>
             </div>

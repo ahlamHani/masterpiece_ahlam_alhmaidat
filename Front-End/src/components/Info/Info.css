@@ -1,0 +1,16 @@
+.containerinfo{
+background:url('./180716-plastic-recycle-journal-header.png');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+width: 100%;
+}
+
+
+
+.childofcontainerinfo{
+    padding: 70px !important;
+    width: 100%;
+    background-color: rgba(80, 54, 54, 0.5);
+    color: #fff;
+}

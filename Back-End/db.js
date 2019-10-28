@@ -23,22 +23,6 @@ let userSchema = new mongoose.Schema({
 
 let Users = mongoose.model("users", userSchema);
 
-let offerSchema = new mongoose.Schema({
-  pathImage:String,
-  Price:Number,
-  title:String
-})
-let Offers = mongoose.model("offers", offerSchema);
-
-let getOffer = cb =>{
-  Offers.find({}, function(err, docs) {
-    if (err) {
-      console.log("ERR:", err);
-    }
-    console.log("DOCS:", docs);
-    cb(docs);
-  });
-}
 
 let getRepo = cb => {
   // console.log("GET TASKS FROM DATABASE");
@@ -114,5 +98,4 @@ module.exports = {
   getUser: getUser,
   regist: registUser,
   addFun: addNew,
-  getOffer:getOffer
 };

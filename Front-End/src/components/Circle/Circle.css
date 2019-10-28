@@ -1,27 +1,59 @@
 .column {
-    width: 240px;
+    width: 400px;
     margin: 20px;
+    color: #fff;
+    padding: 40px 0px;
   }
   
-  .cards {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 18px;
+  .cards1,.cards2,.cards3 {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.609);
+      padding: 10px;
       text-align: center;
-      border-radius:25px 0px;
-      background-color: rgb(223, 218, 248);
-      border: 1px dotted #0400ff81;
-  }
-  
+      background-color: #8DC540;
+      border: 4px double #8DC540;
+      font-size: 40px;
+    }
+    .cards1 i,.cards2 i,.cards3 i{
+        margin: 0px 20px;
+    }
+    .cards1{
+        border-radius:0px 65px 0px 65px;
+        
+    }
+
+    .cards2{
+        border-radius:65px 65px 0px 0px;
+        
+    }
+
+
+
+    .cards3{
+        border-radius:65px 0px 65px  0px;
+        
+    }
+        
+
+
   .circle{
-      background-color: #982da775;
+      /* background-color: #31a72de1; */
+      /* border-radius: 15px 15px 0% 0%; */
       border-radius: 50%;
-      width: 90px;
-      height: 90px ;
-      border: #8b008b 2px dotted;
+      width: 170px;
+      height: 170px ;
+      border-left: #12700f 4px solid;
+      border-right: #12700f 4px solid;
+      border-top: #12700f 4px solid;
       box-shadow: 0 7px 8px 0 #76438333;
       margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 40px;
+  }
+
+  img.ourimages {
+      width: 100px;
+      height: 110px;
   }
   

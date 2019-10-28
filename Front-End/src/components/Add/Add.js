@@ -1,93 +1,12 @@
-// import React, {
-//   Component
-// } from 'react'
-// export default class Add extends Component {
-//   state = {
-//     type: "blastic",
-//     quantity: "AAA",
-
-//   };
-
-//   addNew = () => {
-//     // let newRepos={title:this.state.title, status:this.state.status,language:this.state.language};
-//     this.props.add(this.state)
-//     this.setState({
-//       quantity: "",
-//       type: ""
-//     })
-
-//   }
-
-//   handleChange = (event) => {
-//     this.setState({
-//       quantity: event.target.value
-//     })
-//     console.log(this.state.quantity);
-//   }
-//   changeState = (event) => {
-//     this.setState({
-//       type: event.target.value
-
-//     })
-
-//     console.log(this.state.type);
-
-//   }
-//   render() {
-//     return ( < div >
-//       <
-//       input type = "text"
-//       value = {
-//         this.state.quantity
-//       }
-//       onChange = {
-//         this.handleChange
-//       }
-//       placeholder = "quantity" /
-//       >
-
-//       <
-//       select name = "type"
-//       value = {
-//         this.state.type
-//       }
-//       onChange = {
-//         this.changeState
-//       } >
-//       <
-//       option value = "blastic" > blastic < /option> <
-//       option value = "M3aden" > M3aden < /option>
-
-//       <
-//       /select> <
-//       button type = "submit"
-//       onClick = {
-//         this.addNew
-//       } > Add < /button> < /
-//       div >
-//     )
-//   }
-// }
-
 import React, { Component } from "react";
-// import Nav from "./Nav";
-// import Footer from "./footer";
-
 import "./Add.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams
-} from "react-router-dom";
 import Navhead from "../Navhead";
 
 export default class Add extends Component {
   state = {
     type: "",
     quantity: "",
-     id:this.props.location.state.id
+    id: this.props.location.state.id
   };
 
   handleChange = event => {
@@ -98,7 +17,6 @@ export default class Add extends Component {
   };
 
   addNew = () => {
-    // let newRepos={title:this.state.title, status:this.state.status,language:this.state.language};
     this.props.add(this.state);
     this.setState({
       quantity: "",
@@ -106,13 +24,6 @@ export default class Add extends Component {
     });
   };
 
-  // changeState = event => {
-  //   this.setState({
-  //     type: event.target.value
-  //   });
-
-  // console.log(this.state.type);
-  // };
   render() {
     const { user } = this.props;
     return (
@@ -129,14 +40,18 @@ export default class Add extends Component {
             name="quantity"
             value={this.state.quantity}
             onChange={this.handleChange}
-            placeholder="quantity"
+            placeholder="Quantity"
           />
           <select
-            className="form-control form-text text-muted "
+            defaultValue={"DEFAULT"}
+            className="form-control form-text text-muted"
+            // value={this.state.type}
             name="type"
-            value={this.state.type}
             onChange={this.handleChange}
           >
+            <option value="DEFAULT" disabled>
+              Select Your Material
+            </option>
             <option value="blastic"> blastic </option>
             <option value="M3aden"> M3aden </option>
           </select>
@@ -147,10 +62,7 @@ export default class Add extends Component {
           >
             Add
           </button>
-          {/* {console.log("id from location:",id)} */}
-          {/* {console.log(useParams())} */}
         </div>
-        {/* <Footer/> */}
       </div>
     );
   }
