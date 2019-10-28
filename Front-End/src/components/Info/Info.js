@@ -1,53 +1,51 @@
 import React, { Component } from "react";
-import './Info.css';
-import photo1 from './palstic1.png';
+import "./Info.css";
+import photo1 from "./palstic1.png";
 
 export class Info extends Component {
   render() {
     return (
-      <div>
+      <div className="containerinfo">
         <div style={{ clear: "both" }}></div>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            height: "200px",
-            margin: " 100px",
-            fontFamily: "Lato",
-            fontStyle: "normal",
-            fontSize: "20px"
-          }}
-        >
-          <div>
-            <img
-              style={{ float: "right", margin: "25px 0 150px", width: "228px" }}
-              src={photo1}
-            />
-          </div>
-
+        <div className="childofcontainerinfo">
           <div
             style={{
-              float: "left",
-              margin: "50px",
-              justifyContent: "center",
+              display: "flex",
+              justifyContent: "space-evenly",
+              flexWrap: "wrap",
               fontFamily: "Lato",
-              fontSize: "20px",
               fontStyle: "normal",
-              width: "866px"
+              fontSize: "20px"
             }}
           >
-            Recycling can be defined as the process of converting waste
-            materials into new materials, as opposed to the process of waste
-            disposal. The Recycling Industry is central to the modern concern
-            for minimizing waste and maximizing natural resources, and it
-            concerns most of the material products we use each day, including
-            glass, plastic, cardboard, metal, textiles, electronics, and even
-            cars.
+        
+
+            <div
+              style={{
+                // backgroundColor:"pink",
+                float: "left",
+                margin: "50px",
+                justifyContent: "center",
+                fontFamily: "Lato",
+                fontSize: "30px",
+                fontStyle: "normal",
+                width: "866px"
+              }}
+            >
+              <h1>Know what Recycling ?</h1>
+              <p>
+                <b>Metal Cans</b>
+                Before recycling food and drink cans, remove paper or plastic
+                labels and clean out any residual materials. Some metal cans
+                have an insulated coating that might not be recyclable. When in
+                doubt, throw it out! Recyclables don’t need to thoroughly
+                washed, but they do need to be dry so they don’t contaminate
+                other items.
+              </p>
+            </div>
           </div>
         </div>
-
-        </div>
+      </div>
     );
   }
 }

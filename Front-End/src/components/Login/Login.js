@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
-// import Admin from "./Admin";
-// import Users from "./Users";
 
 class Login extends Component {
   state = {
@@ -14,7 +12,6 @@ class Login extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-    // console.log(e.target.value);
   };
 
   moveItem = () => {
@@ -26,7 +23,6 @@ class Login extends Component {
   };
 
   render() {
-    // const { checkUser } = this.props;
     return (
       <div>
         <form className="margin">

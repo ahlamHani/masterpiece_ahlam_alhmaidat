@@ -1,0 +1,25 @@
+.sliderr1 {
+  background-image: url("./images/slide.png");
+  background-position: center;
+}
+
+.sliderr {
+  width: 100% !important;
+  height: 650px;
+  background-size: cover;
+}
+.blacklest {
+  background-color: #00000046;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderr2 {
+  background-image: url("./images/Al-can-rollout.jpg");
+  background-position: center;
+}
+
+.sliderr3 {
+  background-image: url("./images/recycleplastic.jpg");
+  background-position: center;
+}

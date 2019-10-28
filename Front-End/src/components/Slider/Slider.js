@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 
-import Image1 from './images/3.png';
-import Image2 from './images/slide.png';
-import Image3 from './images/slide2.png';
-import Image4 from './images/slide3.jpg';
-import Image5 from './images/slide4.jpg';
+// import Image1 from "./images/3.png";
+// import Image2 from "./images/slide.png";
+// import Image3 from "./images/slide2.png";
+// import Image4 from "./images/slide3.jpg";
+// import Image5 from "./images/slide4.jpg";
+// import S from './images/s.jpg';
+// import SS from './images/ss.jpeg';
+// import SSS from './images/sss.jpg';
+// import ooo from './images/op.png';
+import './Slider.css'
 
 
 export class Slider extends Component {
@@ -13,45 +18,37 @@ export class Slider extends Component {
     return (
       <div>
         <Carousel>
-          <Carousel.Item>
-            <img
+          <Carousel.Item className="sliderr sliderr1">
+            {/* <img
               className="d-block w-100"
-              src={Image5}
+              src={ooo}
               alt="First slide"
-              style={{height:'600px'}}
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
+              style={{ height: "550px" }}
+            /> */}
+            <div className="blacklest"></div>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
+          <Carousel.Item  className="sliderr sliderr2">
+            {/* <img
               className="d-block w-100"
-              src={Image2}
+              src={ooo}
               alt="Third slide"
-              style={{height:'600px'}}
-            />
+              style={{ height: "550px" }}
+            /> */}
+            <div className="blacklest"></div>
 
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
+          <Carousel.Item className="sliderr sliderr3">
+            {/* <img
               className="d-block w-100"
-              src={Image3}
+              src={ooo}
               alt="Third slide"
-              style={{height:'600px'}}
-            />
+              style={{ height: "550px" }}
+            /> */}
+            <div className="blacklest"></div>
 
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Image,Alert } from "react-bootstrap";
 import "./Offers.css";
 
 import ShowOffer from "./ShowOffer";
@@ -109,13 +108,10 @@ export default class offers extends Component {
     let ShowOfferClose11 = () => this.setState({ ShowOfferAdd11: false });
     let ShowOfferClose12 = () => this.setState({ ShowOfferAdd12: false });
 
-    const { user,offer } = this.props;
+    const { user, offer } = this.props;
     return (
       <React.Fragment>
         <Navhead username={user.userName} />
-        {/* {offer.map((x,i)=>{
-          return <img src={x.pathImage}/> 
-        })} */}
         <div className="card-container">
           <div className="card">
             <img src={p4} className="card-img-top" alt="Offer1" />
@@ -149,7 +145,9 @@ export default class offers extends Component {
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 1000</button>
+              >
+                Point 1000
+              </button>
               <button
                 onClick={this.seeOffer2}
                 type="button"
@@ -166,11 +164,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p12} className="card-img-top" alt="Offer3" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 500</button>
+              >
+                Point 500
+              </button>
               <button
                 onClick={this.seeOffer7}
                 type="button"
@@ -187,11 +187,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p8} className="card-img-top" alt="Offer4" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 100</button>
+              >
+                Point 100
+              </button>
               <button
                 onClick={this.seeOffer6}
                 type="button"
@@ -209,11 +211,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p5} className="card-img-top" alt="Offer5" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 150</button>
+              >
+                Point 150
+              </button>
               <button
                 onClick={this.seeOffer3}
                 type="button"
@@ -231,11 +235,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p10} className="card-img-top" alt="Offer6" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 500</button>
+              >
+                Point 500
+              </button>
               <button
                 onClick={this.seeOffer4}
                 type="button"
@@ -252,11 +258,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p1} className="card-img-top" alt="Offer7" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 1000</button>
+              >
+                Point 1000
+              </button>
               <button
                 onClick={this.seeOffer5}
                 type="button"
@@ -274,11 +282,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p3} className="card-img-top" alt="Offer8" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 150</button>
+              >
+                Point 150
+              </button>
               <button
                 onClick={this.seeOffer8}
                 type="button"
@@ -295,11 +305,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p2} className="card-img-top" alt="Offer9" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 100</button>
+              >
+                Point 100
+              </button>
               <button
                 onClick={this.seeOffer9}
                 type="button"
@@ -317,11 +329,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p9} className="card-img-top" alt="Offer10" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 500</button>
+              >
+                Point 500
+              </button>
               <button
                 onClick={this.seeOffer10}
                 type="button"
@@ -338,11 +352,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p6} className="card-img-top" alt="Offer11" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 150</button>
+              >
+                Point 150
+              </button>
               <button
                 onClick={this.seeOffer11}
                 type="button"
@@ -360,11 +376,13 @@ export default class offers extends Component {
           <div className="card">
             <img src={p11} className="card-img-top" alt="Offer12" />
             <div className="card-body">
-            <button
+              <button
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"
-              >Point 250</button>
+              >
+                Point 250
+              </button>
               <button
                 onClick={this.seeOffer12}
                 type="button"
