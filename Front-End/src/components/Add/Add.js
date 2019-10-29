@@ -27,7 +27,7 @@ export default class Add extends Component {
   render() {
     const { user } = this.props;
     return (
-      <div>
+      <div className="marg">
         <Navhead username={user.userName} />
         <div className=" form-group1 backAdd">
           <h4>Add your type and quantity</h4>

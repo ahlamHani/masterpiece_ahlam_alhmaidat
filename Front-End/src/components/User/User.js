@@ -14,7 +14,6 @@ export default class User extends Component {
     var id = "";
 
     return (
-<<<<<<< HEAD
       <div>
         {Object.keys(user).map((elem, i) => {
           if (elem === "_id") {
@@ -28,21 +27,6 @@ export default class User extends Component {
 
         <Card style={{ width: "25%", padding:'10px' }}>
           <Card.Img style={{ height: "350px" }} src={Use} />
-=======
-      <div style={{marginBottom:"20px" }}>
-           {Object.keys(user).map((elem, i) => {
-            if ( elem ==="_id"){
-                id = user[elem]
-              console.log("id",id);
-              // this.setState({ id:user[elem]})
-              console.log(window.location.pathname);         
-            }
-          })}
-        <Navhead username={user.userName} />
-        
-        <Card style={{ width: "25%"}}>
-          <Card.Img style={{height:"350px"}} src={Logo} />
->>>>>>> tpload naada 28-10 3:46
           <hr></hr>
           <Card.Body>
             <Card.Title>Name: {user.userName}</Card.Title>

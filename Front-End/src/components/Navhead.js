@@ -8,7 +8,7 @@ export default class Navhead extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"#000"}}>
           <div className="container">
             <Navbar.Brand>
               <Link to="/admin">

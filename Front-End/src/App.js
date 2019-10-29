@@ -10,6 +10,7 @@ import Login from "./components/Login/Login";
 import Admin from "./components/Admin";
 import Header from "./components/Header";
 import Landingpage from "./components/Landingpage/Landingpage";
+import Footer from './components/Footer/footer';
 import Futsher from "./components/Futsher/Futsher";
 
 class App extends Component {
@@ -23,33 +24,30 @@ class App extends Component {
   componentDidMount() {
     this.getData();
   }
-<<<<<<< HEAD
-=======
   // futher=()=>{
   //   axios
   //     .get("http://localhost:9000/futher")
   //   {<Futsher/>}
   // };
  
-  getOffers = () => {
-    // const axios = require("axios");
+  // getOffers = () => {
+  //   // const axios = require("axios");
 
-    // Make a request for a user with a given ID
-    axios
-      .get("http://localhost:9000/getoffer")
-      .then(({ data }) => {
-        // handle success
-        console.log(data);
-        this.setState({
-          offer: data
-        });
-      })
-      .catch(error => {
-        // handle error
-        console.log(error);
-      });
-  };
->>>>>>> tpload naada 28-10 3:46
+  //   // Make a request for a user with a given ID
+  //   axios
+  //     .get("http://localhost:9000/getoffer")
+  //     .then(({ data }) => {
+  //       // handle success
+  //       console.log(data);
+  //       this.setState({
+  //         offer: data
+  //       });
+  //     })
+  //     .catch(error => {
+  //       // handle error
+  //       console.log(error);
+  //     });
+  // };
 
   getData = () => {
     axios
@@ -143,10 +141,7 @@ class App extends Component {
             </Route>
           </Switch>
         </Router>
-<<<<<<< HEAD
-=======
        <Footer/>
->>>>>>> tpload naada 28-10 3:46
       </div>
     );
   }

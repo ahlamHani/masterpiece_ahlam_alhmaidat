@@ -11,14 +11,6 @@ export class Landingpage extends Component {
   render() {
     const { user } = this.props;
     return (
-<<<<<<< HEAD
-      <div>
-        <Navhead username={user.userName} />
-        <Slider />
-        <Circle />
-        <Info />
-      </div>
-=======
         <div>
             <Navhead username={user.userName}/>
             <Slider />
@@ -26,7 +18,6 @@ export class Landingpage extends Component {
             <Circle />
             <Info />
         </div>
->>>>>>> tpload naada 28-10 3:46
     );
   }
 }

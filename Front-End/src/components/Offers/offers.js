@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Offers.css";
+import { Alert } from "react-bootstrap";
 
 import ShowOffer from "./ShowOffer";
 import ShowOffer2 from "./ShowOffer2";
@@ -164,11 +165,7 @@ export default class offers extends Component {
           <div  style={{borderRadius:"10%"}}  className="card">
             <img  style={{borderRadius:"10%"}}src={p12} className="card-img-top" alt="Offer3" />
             <div className="card-body">
-<<<<<<< HEAD
-              <button
-=======
             <button 
->>>>>>> tpload naada 28-10 3:46
                 className="btn btn-success"
                 onClick={this.changeValues}
                 value="1000"

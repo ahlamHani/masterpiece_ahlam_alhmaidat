@@ -23,7 +23,7 @@ export class Circle extends Component {
               <img className="ourimages" src={Quantit} />
             </div>
             <div className="cards1">
-              <i class="fas fa-seedling "></i>Quantity
+              <i class="fas fa-seedling "></i>9288
             </div>
           </div>
           <div className="column">
@@ -31,7 +31,7 @@ export class Circle extends Component {
               <img className="ourimages" src={Stackhold} />
             </div>
             <div className="cards2">
-              <i class="far fa-building "></i>Stakeholders
+              <i class="far fa-building "></i>68
             </div>
           </div>
           <div className="column">
@@ -39,7 +39,7 @@ export class Circle extends Component {
               <img className="ourimages" src={Userss} />
             </div>
             <div className="cards3">
-              <i class="fas fa-address-card "></i>Users
+              <i class="fas fa-address-card "></i>725
             </div>
           </div>
         </div>
