@@ -11,7 +11,7 @@ export default class Navhead extends Component {
         <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"#000"}}>
           <div className="container">
             <Navbar.Brand>
-              <Link to="/admin">
+              <Link to="/Admin">
                 <Image src={Logo} height={50} width={60} rounded />
               </Link>
             </Navbar.Brand>

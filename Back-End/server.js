@@ -35,7 +35,7 @@ app.post("/registration", (req, res) => {
   }, box);
 });
 
-app.post("/checkuser", (req, res) => {
+app.post("/checkuser", (req, res) => { 
   let object = req.body;
   DB.getUser(repo => {
     res.json(repo);
